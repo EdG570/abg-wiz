@@ -267,3 +267,7 @@ h1 {
   #logo {
     top: 1em;
   }
+
+  form {
+    max-width: 80%;
+  }

@@ -14,6 +14,7 @@ $(document).ready(function(){
     $('#results').find('h3').remove();
     $('#mv-result').find('h3').remove();
     $('form').children('p').remove();
+    $('form').css('padding-top', '3em');
 
     ph = $('input[name="ph"]').val();
     $(this).children('#ph').val('');
@@ -39,6 +40,7 @@ $(document).ready(function(){
     if(isNaN(ph) || isNaN(co2) || isNaN(bicarb)) {
       console.log('Not a number');
       $('form').prepend("<p>Sorry, that's not a number. Please enter a number and try again.</p>");
+      $('form').css('padding-top', '1em');
     }
     else {
 
@@ -46,6 +48,10 @@ $(document).ready(function(){
 
     }
 
+  });
+
+  $('#info-link').on('click', function(){
+    $('#info-page').slideToggle(1500);
   });
 
 });

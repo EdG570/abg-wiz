@@ -127,6 +127,7 @@ form > input[type="text"] {
   font-size: 1em;
   padding: 0.25em;
   color: #333;
+  width: 10em;
 }
 
 form {
@@ -269,5 +270,5 @@ h1 {
   }
 
   form > input[type="text"] {
-    width: 7em;
+    width: 10em;
   }

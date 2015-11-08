@@ -267,4 +267,7 @@ h1 {
   #logo {
     top: 1em;
   }
-}
+
+  form > input[type="text"] {
+    width: 10em;
+  }

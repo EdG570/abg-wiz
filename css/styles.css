@@ -32,6 +32,10 @@ body {
   display: block; 
 }
 
+input[type="text"], input[type="submit"] {
+  -webkit-appearance: none; -moz-appearance: none;
+}
+
 #info-link {
   text-decoration: none;
   float:right;

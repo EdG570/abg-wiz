@@ -1,0 +1,152 @@
+body {
+  background-color: lightblue;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/background.jpg');
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/background.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3em 0 10em 0;
+  color: #fff;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+
+
+p {
+  line-height: 1.4;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+}
+
+form > label {
+  display: inline-block;
+  margin-right: 0.5em;
+  color: lightblue;
+  float: left;
+  clear: left;
+  font-size: 1em;
+  padding-top: 0.4em;
+}
+
+form > input {
+  display: inline-block;
+  margin-bottom: 1em;
+  float: left;
+}
+
+form > input[type="submit"] {
+  background-color: orange;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  clear: left;
+  position: relative;
+  left: 9.1em;
+} 
+
+form > p {
+  margin-top: 0;
+  color: darkred;
+}
+
+input:focus {
+  outline: 0;
+}
+
+form > input[type="text"] {
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  padding: 0.25em;
+  color: #333;
+}
+
+form {
+  margin: 0 auto;
+  padding: 3em 0em 1em 2em;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 18em;
+  border-radius: 5px;
+  margin-bottom: 2em;
+}
+
+h1 {
+  text-align: center;
+  color: lightblue;
+  letter-spacing: 1px;
+}
+
+#results, #mv-result {
+  clear: left;
+  background-color: #fff;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  padding: 1em 1em;
+  border-radius: 5px;
+  color: #333;
+  display: none;
+}
+
+#results {
+  margin-bottom: 2em;
+}
+
+#results h3,
+#mv-result h3 {
+  font-weight: 300;
+}
+
+#results h2,
+#mv-result h2 {
+  text-align: center;
+  color: red;
+}
+
+#description {
+  font-weight: 300;
+  width: 23.7em;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  color: #eee;
+}
+
+#form-container p {
+  font-weight: 200;
+  
+}
+
+#ph {
+  margin-left: 1.95em;
+}
+
+#bicarb {
+  margin-left: 0.5em;
+}
+
+#target {
+  margin-left: 0.42em;
+}
+
+#mv {
+  margin-left: 1.8em;
+}

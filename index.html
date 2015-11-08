@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Portfolio</title>
+      <meta name="description" content="A brief description of your site">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/styles.css">
+      <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="js/app.js"></script>
+</head>
+<body>
+  <h1>ABG Wiz</h1>
+
+  <p id="description">ABG Wiz makes analysis of ABG results a breeze. Just enter your current ABG values in the form below. ABG Wiz will also calculate a minute ventilation to achieve a desired PaCO2 based on your current minute ventilation and PaCO2.</p>
+
+ 
+      <form class="clearfix">
+        <label for="ph">pH</label>
+        <input id="ph" type="text" name="ph" placeholder="e.g. 7.40" onfocus="this.placeholder = ''" required></input>
+        <label for="co2">PaCO2</label>
+        <input id="co2" type="text" name="co2" placeholder="e.g. 40" onfocus="this.placeholder = ''" required></input>
+        <label for="bicarb">HCO3</label>
+        <input id="bicarb" type="text" name="bicarb" placeholder="e.g. 24" onfocus="this.placeholder = ''" required></input>
+        <label for="target">Target</label>
+        <input id="target" type="text" name="target" placeholder="Target PCO2" onfocus="this.placeholder = ''"></input>
+        <label for="mv">MV</label>
+        <input id="mv" type="text" name="mv" placeholder="Current MV" onfocus="this.placeholder = ''"></input>
+        <input type="submit" value="Analyze"></input>
+      </form>
+  
+
+  <div id="results">
+    <h2 id="analysis">Analysis</h2>
+  </div>
+  <div id="mv-result">
+    <h2 id="adjustments">MV Adjustments</h2>
+  </div>
+
+</body>
+</html>

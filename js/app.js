@@ -138,7 +138,7 @@ function analyze() {
 
 function findTarget(targetMV) {
   targetMV = (mv * co2) / (target);
-  $('#mv-result').append('<h3>Your target MV to obtain a PaCO2 of ' + target + ' is: ' + targetMV + 'L/Min</h3>');
+  $('#mv-result').append('<h3>Your target MV to obtain a PaCO2 of ' + target + ' is ' + targetMV + ' L/min.</h3>');
   
   $('#results').show();
   $('#mv-result').show();

@@ -3,7 +3,7 @@
 <head>
       <meta charset="UTF-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <title>Portfolio</title>
+      <title>ABG Wiz</title>
       <meta name="description" content="A brief description of your site">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,17 +16,21 @@
       <script src="js/app.js"></script>
 </head>
 <body>
-  <h1>ABG Wiz</h1>
 
-  <p id="description">ABG Wiz makes analysis of ABG results a breeze. Just enter your current ABG values in the form below. ABG Wiz will also calculate a minute ventilation to achieve a desired PaCO2 based on your current minute ventilation and PaCO2.</p>
+  <div id="header-content">
+    <img id="logo" src="assets/images/lungs.svg" alt="lungs logo"/>
+    <h1>ABG Wiz</h1>
+  </div>
+
+    <p id="description">ABG Wiz makes analysis of arterial blood gas results a breeze. Just enter your current ABG values in the form below and Wiz will interpret the results and calculate a minute ventilation to achieve a target PaCO<sub>2</sub>.</p>
 
  
       <form class="clearfix">
         <label for="ph">pH</label>
         <input id="ph" type="text" name="ph" placeholder="e.g. 7.40" onfocus="this.placeholder = ''" required></input>
-        <label for="co2">PaCO2</label>
+        <label for="co2">PaCO<sub>2</sub></label>
         <input id="co2" type="text" name="co2" placeholder="e.g. 40" onfocus="this.placeholder = ''" required></input>
-        <label for="bicarb">HCO3</label>
+        <label for="bicarb">HCO<sub>3</sub></label>
         <input id="bicarb" type="text" name="bicarb" placeholder="e.g. 24" onfocus="this.placeholder = ''" required></input>
         <label for="target">Target</label>
         <input id="target" type="text" name="target" placeholder="Target PCO2" onfocus="this.placeholder = ''"></input>

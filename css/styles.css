@@ -237,10 +237,6 @@ h1 {
   #results, #mv-result {
     width: 18em;
   }
-
-  form {
-    padding-right: 1em;
-  }
 }
 
 @media only screen and (max-width: 450px) {

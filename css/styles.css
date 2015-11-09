@@ -36,9 +36,23 @@ input[type="text"], input[type="submit"] {
   -webkit-appearance: none; -moz-appearance: none;
 }
 
+/*--------------------Info links-----------------------*/
+
+ul {
+  list-style: none;
+}
+
+ul > li {
+  margin-bottom: 0.5em;
+}
+
+ul > li:last-child {
+  margin-bottom: 0;
+}
+
+#normals-link,
 #info-link {
   text-decoration: none;
-  float:right;
   font-size: 1.25em;
   color: #E99F75;
   font-weight: 200;
@@ -46,23 +60,40 @@ input[type="text"], input[type="submit"] {
   letter-spacing: 1px;
 }
 
+#normals-link {
+  float: left;
+  text-decoration: none;
+}
+
+#info-link {
+  float:right;
+}
+
 .show {
   display: none;
 }
 
-#info-page {
-  width: 25em;
+#info-page,
+#normals-page {
   margin: 0;
-  margin-left: 50em;
   background-color: lightblue;
   border-radius: 5px;
   padding: 1em 1em 1em 2em;
-  position: absolute;
   top: 5em;
+  z-index: 9999;
+}
+
+#normals-page {
+  width: 10em;
+}
+
+#info-page {
+  width: 25em;
+  float: right;
 }
 
 .container {
-  width: 1140px;
+  width: 960px;
   margin: 0 auto;
 }
 

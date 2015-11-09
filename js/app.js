@@ -59,6 +59,11 @@ $(document).ready(function(){
     $('#info-page').slideToggle(1500);
   });
 
+  //slides down hidden normal values
+  $('#normals-link').on('click', function(){
+    $('#normals-page').slideToggle(1500);
+  });
+
 });
 
 function analyze() {

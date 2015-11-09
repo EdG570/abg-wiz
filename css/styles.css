@@ -76,20 +76,31 @@ ul > li:last-child {
 #info-page,
 #normals-page {
   margin: 0;
-  background-color: lightblue;
+  background-color: rgba(173, 216, 230, 0.7);
   border-radius: 5px;
   padding: 1em 1em 1em 2em;
-  top: 5em;
+  top: 2em;
   z-index: 9999;
+  position: absolute;
 }
 
 #normals-page {
   width: 10em;
+  left: -2em;
+}
+
+#normals-page span {
+  color: #B3AF75;
 }
 
 #info-page {
   width: 25em;
-  float: right;
+  left: 41em;
+}
+
+#info-container,
+#normals-container {
+  position: relative;
 }
 
 .container {
@@ -111,6 +122,7 @@ h1, h2, h3 {
 #header-content {
   width: 16em;
   margin: 0 auto;
+  clear: both;
 }
 
 #logo {
@@ -226,15 +238,15 @@ h1 {
 }
 
 #ph {
-  margin-left: 1.8em;
+  margin-left: 1.85em;
 }
 
 #bicarb {
-  margin-left: 0.5em;
+  margin-left: 0.52em;
 }
 
 #target {
-  margin-left: 0.35em;
+  margin-left: 0.32em;
 }
 
 #mv {
@@ -245,28 +257,17 @@ h1 {
 
 @media only screen and (max-width: 1140px) {
   .container {
-    width: 100%;
+    width: 80%;
   }
-
-  #info-link {
-    float: none;
-    text-align: center;
-  }
-
-  #info-container {
-    text-align: center;
-  }
-
-  #info-page {
-    position: static;
-    margin: 0 auto;
-  }
-
 }
 
 @media only screen and (max-width: 950px) {
   #results, #mv-result {
     width: 18em;
+  }
+
+  #header-content {
+    height: 7em;
   }
 }
 
@@ -306,4 +307,20 @@ h1 {
   form > input[type="text"] {
     max-width: 50%;
     padding: 0.25em;
+  }
+
+  form > input[type="submit"] {
+    max-width: 53%;
+    padding-right: 25%;
+    padding-left: 15%;
+  }
+
+  #info-link,
+  #normals-link {
+    font-size: 0.9em;
+    margin-bottom: 1em;
+  }
+
+  .container {
+    width: 90%;
   }
